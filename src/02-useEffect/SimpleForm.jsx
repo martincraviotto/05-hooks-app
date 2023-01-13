@@ -20,7 +20,15 @@ export const SimpleForm = () => {
 
     useEffect(() => {
       console.log('useEffect called')
-    })
+    }, []);
+
+    useEffect(() => {
+        console.log('useEffect called because formState changed')
+      }, [formState]);
+
+    useEffect(() => {
+    console.log('useEffect called because email changed')
+    }, [email]);  
     
 
   return (
