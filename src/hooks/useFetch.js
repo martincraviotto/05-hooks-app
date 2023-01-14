@@ -15,9 +15,19 @@ export const useFetch = (url) => {
             isLoading:true,            
         });
 
-        const resp = await fetch(url);
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'e464681dfdmsh8b5f68fe34ea976p1ed3afjsn955ab40e87e3',
+                'X-RapidAPI-Host': 'mashape-community-urban-dictionary.p.rapidapi.com'
+            }
+        };
+        
+        const resp = await fetch('https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=sweet', options);
         const data = await resp.json();
         
+        console.log(data);
+
         setState({
             data,
             isLoading:false,
