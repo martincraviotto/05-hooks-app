@@ -22,12 +22,10 @@ export const useFetch = (url) => {
                 'X-RapidAPI-Host': 'mashape-community-urban-dictionary.p.rapidapi.com'
             }
         };
-        
-        const resp = await fetch('https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=sweet', options);
+
+        const resp = await fetch(url, options);        
         const data = await resp.json();
         
-        console.log(data);
-
         setState({
             data,
             isLoading:false,
