@@ -1,5 +1,4 @@
 import React from 'react'
-import { FormTeminoWithcustomHook } from '../02-useEffect/FormTeminoWithcustomHook';
 import { useCounter } from '../hooks/useCounter';
 import { useFetch } from '../hooks/useFetch'
 import { useForm } from '../hooks/useForm';
