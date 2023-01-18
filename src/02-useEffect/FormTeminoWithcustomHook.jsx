@@ -12,22 +12,22 @@ export const FormTeminoWithcustomHook = () => {
     const {termino}=formState;
 
 
-  return (    
+    return (    
 
-    <>
-        <h1>Término</h1>
-        <hr/>
+        <>
+            <h1>Término</h1>
+            <hr/>
 
-        <input
-            type="text"
-            className="form-control"
-            placeholder="Termino"
-            name="termino"
-            value={termino}
-            onChange={onInputChange}
-        />
-        
-        <button onClick={onResetForm} className='btn btn-primary mt-2'>Borrar</button>
-    </>
-  )
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Termino"
+                name="termino"
+                value={termino}
+                onChange={onInputChange}
+            />
+            
+            <button onClick={onResetForm} className='btn btn-primary mt-2'>Borrar</button>
+        </>
+    )
 }
