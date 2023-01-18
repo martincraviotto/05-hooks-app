@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom/client';
 //import { SimpleForm } from './02-useEffect/SimpleForm';
 //import { FormWithcustomHook } from './02-useEffect/FormWithcustomHook';
 //import { MultiplecustomHooks } from './03-examples/MultiplecustomHooks';
-import { FocusScreen } from './04-useRef/FocusScreen';
+//import { FocusScreen } from './04-useRef/FocusScreen';
+import { Layout } from './05-useLayoutEffect/Layout';
 import './index.css';
 
 
@@ -13,7 +14,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-    <FocusScreen />
+    <Layout />
   //</React.StrictMode>
 );
 
